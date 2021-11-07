@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/contact.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="top-header">Contact</h1>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <nav>
+                <ul>
+                    <li><a href="../Home.html">Home</a></li>
+                    <li><a href="./information.html">Information</a></li>
+                    <li><a href="./blogs.html">Blogs</a></li>  
+                    <li><a href="./contact.html">Contacts & links</a></li> 
+                </ul>
+            </nav> 
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+    </header>
+    <div class="content">
+        <form
+        action="https://formspree.io/f/mwkadrve"
+        method="POST">
+            <label>
+                your email:
+                <input type="email" name="_replyto">
+            </label>
+                <label>
+                    your message:
+                    <textarea name="message"></textarea>
+                </label>
+            <!-- your other form fields go here -->
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</body>
+
+</html>
