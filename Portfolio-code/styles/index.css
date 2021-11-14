@@ -15,7 +15,7 @@ h1,
 h2,
 h3 {
   font-family: 'Galada', cursive;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 .bottom-header {
@@ -46,12 +46,9 @@ h3 {
   border-top-left-radius: 100%;
 }
 
-p,
-p1,
-p2,
-p3 {
+p {
   font-family: 'Caveat', cursive;
-  font-size: 1.5em;
+  font-size: 1.8rem;
 }
 
 body {

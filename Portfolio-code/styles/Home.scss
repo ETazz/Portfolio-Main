@@ -28,11 +28,14 @@ body{
     margin-right: 15vw;
     margin-bottom: 5vh;
     border: 5px solid $secondary-color;
-    
+    h1{
+        font-size: 1.8rem;
+    }
     P{
         font-size: 2rem;
     }
 }
+
 .experience {  
     @include justify-content();
         margin: 0;
@@ -101,5 +104,9 @@ h2{
     border-radius: 30%;
 }
 
-
+@media screen and (min-height: 1400px) {
+    .home-landing{
+        height: 100vh;
+    }
+}
 

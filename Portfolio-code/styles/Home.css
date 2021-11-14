@@ -43,6 +43,10 @@ body {
   border: 5px solid rgba(47, 47, 47, 0.9);
 }
 
+.text-box h1 {
+  font-size: 1.8rem;
+}
+
 .text-box P {
   font-size: 2rem;
 }
@@ -179,5 +183,11 @@ h2 {
   margin-right: 10px;
   margin-left: 10px;
   border-radius: 30%;
+}
+
+@media screen and (min-height: 1400px) {
+  .home-landing {
+    height: 100vh;
+  }
 }
 /*# sourceMappingURL=Home.css.map */
