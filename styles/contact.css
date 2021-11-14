@@ -1,55 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Galada&display=swap");
-html {
-  scroll-behavior: smooth;
-}
-
-*, *::before, *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
 body {
+  width: 100%;
   margin: 0;
-  font-weight: 500;
-  background-size: cover;
+  padding: 0;
 }
 
 .content {
-  height: 200vh;
+  height: 100%;
+}
+
+.contact-landing {
+  background-repeat: no-repeat;
   background-size: cover;
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-}
-
-/* navagation styling */
-header {
-  position: fixed;
-  text-align: center;
-  z-index: 999;
+  background-position: center;
+  z-index: 0;
   width: 100%;
-  background-color: #31e4fc;
-}
-
-.top-header {
-  font-family: 'Galada', cursive;
-}
-
-.nav-toggle {
-  position: absolute;
-  top: -9999px;
-  left: -9999px;
-}
-
-.nav-toggle:focus ~ .nav-toggle-label {
-  outline: 3px solid rgba(173, 216, 230, 0.75);
-}
-
-.nav-toggle-label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin-left: 1em;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -57,156 +23,166 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url(../images/trains-contact-background.jpeg);
+  height: 120vh;
 }
 
-.nav-toggle-label span,
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
-  display: block;
-  background: white;
-  height: 2px;
-  width: 2em;
-  border-radius: 2px;
-  position: relative;
+.contact-text {
+  background-color: rgba(52, 99, 110, 0.9);
+  border-radius: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px;
+  margin-top: 140px;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  margin-bottom: 5vh;
+  border: 5px solid rgba(47, 47, 47, 0.9);
 }
 
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
-  content: '';
-  position: absolute;
-}
-
-.nav-toggle-label span::before {
-  bottom: 7px;
-}
-
-.nav-toggle-label span::after {
-  top: 7px;
-}
-
-nav {
-  position: absolute;
-  text-align: left;
-  top: 100%;
-  left: 0;
+form {
   width: 100%;
-  background-color: #31e4fc;
-  -webkit-transform: scale(1, 0);
-          transform: scale(1, 0);
-  -webkit-transform-origin: top;
-          transform-origin: top;
-  -webkit-transition: -webkit-transform 400ms ease-in-out;
-  transition: -webkit-transform 400ms ease-in-out;
-  transition: transform 400ms ease-in-out;
-  transition: transform 400ms ease-in-out, -webkit-transform 400ms ease-in-out;
 }
 
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  font-family: 'Courgette', cursive;
+  font-weight: 900;
+  font-size: 1.5rem;
 }
 
-nav li {
-  margin-bottom: 1em;
-  margin-left: 1em;
+.other-contact {
+  background-color: #3c8192;
+  border-radius: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+  background-color: rgba(120, 220, 220, 0.9);
+  border: 5px solid rgba(47, 47, 47, 0.9);
+  margin-bottom: 100px;
 }
 
-nav a {
-  color: white;
-  font-family: sans-serif;
-  text-decoration: none;
-  text-transform: uppercase;
-  opacity: 0;
-  -webkit-transition: opacity 150ms ease-in-out;
-  transition: opacity 150ms ease-in-out;
+.other-contact h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0.5rem;
 }
 
-nav nav a:hover {
-  color: black;
+.bottom-contact-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 100px;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  bottom: 0;
+  width: 300px;
+  border-top-right-radius: 25%;
+  border-top-left-radius: 25%;
+  color: #3c8192;
+  padding: 10px;
+  border-right: 5px solid rgba(47, 47, 47, 0.9);
+  border-left: 5px solid rgba(47, 47, 47, 0.9);
+  border-top: 5px solid rgba(47, 47, 47, 0.9);
+  position: fixed;
 }
 
-.nav-toggle:checked ~ nav {
-  -webkit-transform: scale(1, 1);
-          transform: scale(1, 1);
+#logo {
+  display: block;
+  margin: 0 auto;
+  text-indent: -9999;
+  width: 65px;
+  height: 65px;
+  margin-right: 10px;
+  margin-left: 10px;
+  border-radius: 30%;
 }
 
-.nav-toggle:checked ~ nav a {
-  opacity: 1;
-  -webkit-transition: opacity 250ms ease-in-out 250ms;
-  transition: opacity 250ms ease-in-out 250ms;
+#logo-1 {
+  display: block;
+  margin: 0 auto;
+  text-indent: -9999;
+  width: 65px;
+  height: 65px;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: black;
+  border-radius: 30%;
 }
 
-@media screen and (min-width: 700px) {
-  .nav-toggle-label {
-    display: none;
+#logo-2 {
+  display: block;
+  margin: 0 auto;
+  text-indent: -9999;
+  width: 65px;
+  height: 65px;
+  margin-right: 10px;
+  margin-left: 10px;
+  border-radius: 30%;
+}
+
+@media screen and (min-height: 600px) {
+  .other-contact h1 {
+    font-size: 2rem;
   }
-  header {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr auto minmax(500px, 3fr) 1fr;
-        grid-template-columns: 1fr auto minmax(500px, 3fr) 1fr;
-  }
-  .top-header {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2 / 3;
-  }
-  nav {
-    position: relative;
-    text-align: right;
-    -webkit-transition: none;
-    transition: none;
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
-    background: none;
-    top: initial;
-    left: initial;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 1;
-    grid-column: 3 / 4;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  nav ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  nav li {
-    margin-left: 3em;
-    margin-bottom: 0;
-  }
-  nav a {
-    opacity: 1;
-    position: relative;
-  }
-  nav a::before {
-    content: '';
-    display: block;
-    height: 5px;
-    background: black;
-    position: absolute;
-    top: -.75em;
-    left: 0;
-    right: 0;
-    -webkit-transform: scale(0, 1);
-            transform: scale(0, 1);
-    -webkit-transition: -webkit-transform ease-in-out 250ms;
-    transition: -webkit-transform ease-in-out 250ms;
-    transition: transform ease-in-out 250ms;
-    transition: transform ease-in-out 250ms, -webkit-transform ease-in-out 250ms;
-  }
-  nav a:hover::before {
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
+}
+
+@media screen and (min-height: 600px) {
+  .contact-text label {
+    font-size: 2rem;
   }
 }
 /*# sourceMappingURL=contact.css.map */

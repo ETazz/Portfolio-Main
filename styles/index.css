@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Galada&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
 html {
   scroll-behavior: smooth;
+  height: 100%;
+  width: 100%;
 }
 
 *, *::before, *::after {
@@ -8,18 +11,58 @@ html {
           box-sizing: border-box;
 }
 
+h1,
+h2,
+h3 {
+  font-family: 'Galada', cursive;
+  font-size: 1.5rem;
+}
+
+.bottom-header {
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  position: fixed;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  bottom: 0;
+  color: #3c8192;
+  padding: 10px;
+  border-right: 5px solid rgba(47, 47, 47, 0.9);
+  border-left: 5px solid rgba(47, 47, 47, 0.9);
+  border-top: 5px solid rgba(47, 47, 47, 0.9);
+  opacity: 0.9;
+  border-top-right-radius: 100%;
+  border-top-left-radius: 100%;
+}
+
+p,
+p1,
+p2,
+p3 {
+  font-family: 'Caveat', cursive;
+  font-size: 1.5em;
+}
+
 body {
   margin: 0;
+  background-color: rgba(47, 47, 47, 0.9);
   font-weight: 500;
-  background-size: cover;
 }
 
 .content {
-  height: 200vh;
-  background-size: cover;
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
+  height: 100%;
+  width: 100%;
 }
 
 /* navagation styling */
@@ -28,21 +71,19 @@ header {
   text-align: center;
   z-index: 999;
   width: 100%;
-  background-color: #31e4fc;
+  background-color: #3c8192;
+  border-bottom: 5px solid rgba(47, 47, 47, 0.9);
 }
 
 .top-header {
   font-family: 'Galada', cursive;
+  margin-bottom: 0;
 }
 
 .nav-toggle {
   position: absolute;
   top: -9999px;
   left: -9999px;
-}
-
-.nav-toggle:focus ~ .nav-toggle-label {
-  outline: 3px solid rgba(173, 216, 230, 0.75);
 }
 
 .nav-toggle-label {
@@ -57,6 +98,9 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .nav-toggle-label span,
@@ -90,7 +134,7 @@ nav {
   top: 100%;
   left: 0;
   width: 100%;
-  background-color: #31e4fc;
+  background-color: #3c8192;
   -webkit-transform: scale(1, 0);
           transform: scale(1, 0);
   -webkit-transform-origin: top;
@@ -102,7 +146,7 @@ nav {
 }
 
 nav ul {
-  margin: 0;
+  margin-top: 10px;
   padding: 0;
   list-style: none;
 }
@@ -126,9 +170,14 @@ nav nav a:hover {
   color: black;
 }
 
+.nav-toggle:checked ~ header {
+  border-bottom: 20px;
+}
+
 .nav-toggle:checked ~ nav {
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
+  border-bottom: 5px solid rgba(47, 47, 47, 0.9);
 }
 
 .nav-toggle:checked ~ nav a {
@@ -137,7 +186,7 @@ nav nav a:hover {
   transition: opacity 250ms ease-in-out 250ms;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 650px) {
   .nav-toggle-label {
     display: none;
   }
@@ -151,6 +200,7 @@ nav nav a:hover {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
     grid-column: 2 / 3;
+    border-bottom: 0;
   }
   nav {
     position: relative;

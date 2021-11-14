@@ -1,0 +1,87 @@
+@import "variables";
+
+@import "mixins"; 
+
+@import "fonts";
+
+
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+.about-landing{
+    @include background-images();
+    @include justify-content();
+    background-image: url(../images/rails-background.jpg);
+    margin: 0;
+}
+
+
+
+.about-text{
+    @include text-box-1();
+    background-color: $primary-color-1;
+    padding: 20px;
+    width: 80%;
+    margin-top: 140px;
+    margin-bottom: 100px;
+    border: 5px solid $secondary-color;
+
+    h1{
+        font-size: 1.8rem;
+        font-family: 'Galada', cursive;
+        margin:0;
+    }
+}
+
+
+
+#logo{
+    display: block;
+    margin: 0 auto;
+    text-indent: -9999;
+    width: 65px;
+    height: 65px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 30%;
+}
+
+
+
+@media screen and (min-height: 700px) {
+    .about-landing{
+        height: 100vh;
+    }
+}
+@media screen and (max-width: 400px) {
+    .about-landing{
+        height: 100%;
+    }
+}
+
+@media screen and (min-height: 600px){
+    .about-text{
+        h1{
+            font-size: 4rem;
+        }
+        p{
+            font-size: 4rem;
+        }
+    }
+}
+
+@media screen and (min-height: 800px){
+    .about-text{
+        h1{
+            font-size: 4rem;
+        }
+        p{
+            font-size: 4rem;
+        }
+    }
+}
+

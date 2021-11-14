@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Galada&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: 0.8rem;
+}
+
+.blog-landing {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/graffiti.jpeg);
+  margin: 0;
+}
+
+#blog-img {
+  width: 100%;
+  height: 40vh;
+  margin-bottom: 5vh;
+  border-radius: 10%;
+}
+
+.blog-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #3c8192;
+  border-radius: 5%;
+  margin: 0;
+  margin-bottom: 5vh;
+  padding: 20px;
+  border-radius: 50%;
+  width: 320px;
+  height: 320px;
+  font-size: 3rem;
+  border: 10px solid rgba(47, 47, 47, 0.9);
+  margin-top: 140px;
+  margin-bottom: 5vh;
+}
+
+.blogs {
+  padding-bottom: 100px;
+  list-style: none;
+}
+
+#blogging-pages {
+  color: black;
+  font-size: 1rem;
+}
+
+.blog-texts {
+  margin-top: 5px;
+  height: 80%;
+  border-radius: 0%;
+  background-color: #78e4ff;
+  margin-left: 10px;
+}
+
+.blog-texts-1 {
+  margin-top: 5px;
+  height: 80%;
+  border-radius: 0%;
+  background-color: #50dcff;
+  margin-left: 10px;
+}
+
+.blog-texts-2 {
+  margin-top: 5px;
+  height: 80%;
+  border-radius: 0%;
+  background-color: #1ed2ff;
+  margin-left: 10px;
+}
+
+.blog-texts-3 {
+  margin-top: 5px;
+  height: 80%;
+  border-radius: 0%;
+  background-color: #00bceb;
+  margin-left: 10px;
+}
+
+.blog-texts-4 {
+  margin-top: 5px;
+  height: 80%;
+  border-radius: 0%;
+  background-color: #00779b;
+  margin-left: 10px;
+}
+
+p {
+  position: relative;
+}
+
+.blogs-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  text-align: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.blogs-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  text-align: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.blog-box {
+  height: 15vh;
+  width: 100%;
+  padding: 10px;
+  padding-bottom: 10px;
+  border: 5px solid rgba(47, 47, 47, 0.9);
+}
+
+.blog-box h1 {
+  margin: 10px;
+}
+
+.blog-boxs {
+  height: 15vh;
+  width: 100%;
+  padding: 10px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  padding-bottom: 10px;
+  border: 5px solid rgba(47, 47, 47, 0.9);
+}
+
+.blog-boxs h1 {
+  margin: 10px;
+}
+
+#blog-box-1 {
+  background-color: rgba(120, 228, 255, 0.8);
+}
+
+#blog-box-2 {
+  background-color: rgba(80, 220, 255, 0.8);
+}
+
+#blog-box-3 {
+  background-color: rgba(30, 210, 255, 0.8);
+}
+
+#blog-box-4 {
+  background-color: rgba(0, 188, 235, 0.8);
+}
+
+#blog-box-5 {
+  background-color: rgba(0, 119, 155, 0.8);
+}
+
+@media screen and (min-width: 400px) {
+  .blog-box {
+    width: 80%;
+  }
+  .blog-boxs {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .blog-box {
+    width: 70%;
+  }
+  .blog-boxs {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .blog-box {
+    width: 50%;
+  }
+  .blog-boxs {
+    width: 50%;
+  }
+}
+
+@media screen and (min-height: 600px) {
+  .about-text h1 {
+    font-size: 2rem;
+  }
+  .about-text p {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-height: 1000px) {
+  p {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-height: 1000px) {
+  #blogging-pages {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-height: 1400px) {
+  p {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (min-height: 1400px) {
+  #blogging-pages {
+    font-size: 1.6rem;
+  }
+}
+/*# sourceMappingURL=blogs.css.map */

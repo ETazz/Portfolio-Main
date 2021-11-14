@@ -1,2 +1,128 @@
-@import "index";
 @import "variables";
+
+@import "mixins";
+
+@import "fonts";
+
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.content{
+    height: 100%;
+}
+.contact-landing{
+    @include background-images();
+    @include justify-content();
+    background-image: url(../images/trains-contact-background.jpeg);
+    height: 120vh;
+}
+
+
+.contact-text{
+    @include text-box-1();
+    @include justify-content();
+    padding: 15px;
+    margin-top: 140px;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-bottom: 5vh;
+    border: 5px solid $secondary-color;
+}
+
+form{
+    width: 100%;
+}
+
+label{
+    @include justify-content();
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-family: 'Courgette', cursive;
+    font-weight: 900;  
+    font-size: 1.5rem;
+}
+
+.other-contact{
+    @include text-box();
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 10px;
+    background-color: $third-color;
+    border: 5px solid $secondary-color;
+    margin-bottom: 100px;
+
+
+    h1{
+        @include justify-content();
+        margin: 0.5rem;
+    }
+}
+    .bottom-contact-header{
+        @include justify-content();
+        margin-top: 100px;
+        flex-direction: row;
+        justify-content: center;
+        bottom: 0;
+        width: 300px;
+        border-top-right-radius: 25%;
+        border-top-left-radius: 25%;
+        color: $primary-color;
+        padding: 10px;
+        border-right: 5px solid $secondary-color;
+        border-left: 5px solid $secondary-color;
+        border-top: 5px solid $secondary-color;
+        position: fixed;
+    }
+    #logo{
+        display: block;
+        margin: 0 auto;
+        text-indent: -9999;
+        width: 65px;
+        height: 65px;
+        margin-right: 10px;
+        margin-left: 10px;
+        border-radius: 30%;
+    }
+    #logo-1{
+        display: block;
+        margin: 0 auto;
+        text-indent: -9999;
+        width: 65px;
+        height: 65px;
+        margin-right: 10px;
+        margin-left: 10px;
+        background-color: black;
+        border-radius: 30%;
+    }
+
+    #logo-2{
+        display: block;
+        margin: 0 auto;
+        text-indent: -9999;
+        width: 65px;
+        height: 65px;
+        margin-right: 10px;
+        margin-left: 10px;
+        border-radius: 30%;
+    }
+    @media screen and (min-height: 600px){
+        .other-contact{
+            h1{
+                font-size: 2rem;
+            }
+        }
+    }
+    
+    @media screen and (min-height: 600px){
+        .contact-text{
+            label{
+                font-size: 2rem;
+        }
+    }
+}
+    
+    
