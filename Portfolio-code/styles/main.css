@@ -10,8 +10,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Galada&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Galada&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
 html {
   scroll-behavior: smooth;
   height: 100%;
@@ -516,15 +514,9 @@ body {
   border-radius: 30%;
 }
 
-@media screen and (min-height: 700px) {
+@media screen and (min-height: 1080px) {
   .about-landing {
     height: 100vh;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .about-landing {
-    height: 100%;
   }
 }
 
@@ -1073,26 +1065,5 @@ body {
   width: 90%;
   border: 10px solid #282828;
   opacity: 1;
-}
-
-body {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-.resume {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: #3c8192;
 }
 /*# sourceMappingURL=main.css.map */

@@ -56,15 +56,9 @@ body {
   border-radius: 30%;
 }
 
-@media screen and (min-height: 700px) {
+@media screen and (min-height: 1080px) {
   .about-landing {
     height: 100vh;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .about-landing {
-    height: 100%;
   }
 }
 
