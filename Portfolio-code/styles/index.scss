@@ -1,0 +1,225 @@
+@import "index";
+
+@import "variables";
+
+@import "fonts";
+
+@import "mixins";
+
+html{
+    scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,{
+    font-family: 'Galada', cursive;
+    font-size: 1.5rem;
+}
+
+.bottom-header{
+    @include bottom-header;
+}
+
+p,
+p1,
+p2,
+p3{
+    font-family: 'Caveat', cursive;
+    font-size: 1.5em;
+}
+
+body{
+    margin: 0;
+    background-color: $secondary-color;
+    font-weight: 500;
+}
+
+.content {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* navagation styling */
+
+header{
+    position: fixed;
+    text-align: center;
+    z-index: 999;
+    width: 100%;
+    background-color: $primary-color;
+    border-bottom: 5px solid $secondary-color;
+}
+
+.top-header{
+    font-family: 'Galada', cursive;
+    margin-bottom: 0;
+}
+
+
+.nav-toggle{
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+
+.nav-toggle-label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after{
+    display: block;
+    background: white;
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after{
+    content: '';
+    position: absolute;
+} 
+
+.nav-toggle-label span::before {
+    bottom: 7px;
+}
+
+.nav-toggle-label span::after {
+    top: 7px;
+}
+
+
+nav {
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: $primary-color;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
+
+        ul { 
+        margin-top: 10px;
+        padding: 0;
+        list-style: none;
+        }
+        
+            li {
+            margin-bottom: 1em;
+            margin-left: 1em;
+            }       
+
+                a {
+                color: white;
+                font-family:sans-serif;
+                text-decoration: none;
+                text-transform: uppercase;
+                opacity: 0;
+                transition: opacity 150ms ease-in-out;
+                }
+                
+
+                    nav a:hover{
+                        color: black;
+                    }
+
+                }
+                    
+.nav-toggle:checked ~ header{
+    border-bottom: 20px;
+}
+
+.nav-toggle:checked ~ nav {
+    transform: scale(1, 1);
+    border-bottom: 5px solid $secondary-color;
+}
+
+
+.nav-toggle:checked ~ nav a {
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
+}
+
+
+@media screen and (min-width: 650px) {
+    .nav-toggle-label {
+        display: none;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr auto minmax(500px, 3fr) 0.3fr;  
+    }
+
+    .top-header {
+        grid-column: 2 / 3;
+        border-bottom: 0;
+    }
+    
+    nav {
+        position: relative;
+        transition: none;
+        text-align: left;
+        transform: scale(1,1);
+        background: none;
+        top: initial;
+        left: initial;
+        grid-column: 3 / 4;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav li {
+        margin-left: 2em;
+        margin-bottom: 0;
+    }
+
+    nav a {
+        opacity: 1;
+        position: relative;
+    }
+    nav a::before {
+        content: '';
+        display: block;
+        height: 5px;
+        background: black;
+        position: absolute;
+        top: -.75em;
+        left: 0;
+        right: 0;
+        transform: scale(0, 1);
+        transition: transform ease-in-out 250ms;
+      }
+      
+      nav a:hover::before {
+        transform: scale(1,1);
+      }
+
+}
+
